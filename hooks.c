@@ -6,7 +6,7 @@
 /*   By: mcanal <mcanal@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/29 17:28:24 by mcanal            #+#    #+#             */
-/*   Updated: 2015/01/08 06:24:09 by mcanal           ###   ########.fr       */
+/*   Updated: 2015/01/15 07:01:50 by mcanal           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,17 +35,17 @@ int		key_hook(int key, t_env *e)
 	else if (key == 65364)
 		e->cste -= 0.1;
 	else if (key == 65451)
-        e->zoom += 0.1;
-    else if (key == 65453 && e->zoom > 0.1)
-        e->zoom -= 0.1;
+		e->zoom += 0.1;
+	else if (key == 65453 && e->zoom > 0.1)
+		e->zoom -= 0.1;
 	else if (key == 122)
-        e->move_y -= 10;
-    else if (key == 113)
-        e->move_x -= 10;
-    else if (key == 115)
-        e->move_y += 10;
-    else if (key == 100)
-        e->move_x += 10;
+		e->move_y -= 10;
+	else if (key == 113)
+		e->move_x -= 10;
+	else if (key == 115)
+		e->move_y += 10;
+	else if (key == 100)
+		e->move_x += 10;
 	mlx_clear_window(e->mlx, e->win);
 	draw(e);
 	return (0);

@@ -6,7 +6,7 @@
 /*   By: mcanal <mcanal@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/29 13:46:33 by mcanal            #+#    #+#             */
-/*   Updated: 2015/01/08 06:19:17 by mcanal           ###   ########.fr       */
+/*   Updated: 2015/01/15 07:01:27 by mcanal           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ int		main(int ac, char **av)
 	if (ac != 2)
 		EXIT_ARG_FAIL;
 	if ((e.fd = open(av[1], O_RDONLY)) < 0)
-        EXIT_NO_MAP;
+		EXIT_NO_MAP;
 	e.first_l = NULL;
 	e.win_size = 1000;
 	e.win_ang = -30;
