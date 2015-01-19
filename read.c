@@ -6,7 +6,7 @@
 /*   By: mcanal <mcanal@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/29 16:18:20 by mcanal            #+#    #+#             */
-/*   Updated: 2015/01/15 09:36:35 by mcanal           ###   ########.fr       */
+/*   Updated: 2015/01/19 11:26:18 by mcanal           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ static void		check_map(char *s)
 	while (s[i] == ' ' || s[i] == '-' || s[i] == '\n')
 		i++;
 	s += i;
-	if (!ft_atoi(s) && s[i] != '0')
+	if (!ft_atoi(s) && *s != '0')
 		EXIT_MAP_FAIL;
 	s -= i;
 	i = 0;
