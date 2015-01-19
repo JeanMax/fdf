@@ -6,7 +6,7 @@
 #    By: mcanal <mcanal@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/29 13:16:03 by mcanal            #+#    #+#              #
-#    Updated: 2015/01/08 03:48:48 by mcanal           ###   ########.fr        #
+#    Updated: 2015/01/19 11:35:54 by mcanal           ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -24,7 +24,7 @@ all: $(NAME)
 
 $(NAME):
 	@rm -f $(NAME)
-	@gcc $(FLAG) $(SRCC) -L/usr/X11/lib -lmlx -lXext -lX11 -o $(NAME)
+	@gcc $(FLAG) $(SRCC) -L/usr/X11/lib -lmlx -lXext -lX11 -o $(NAME) -lm
 
 lib:
 	@cd libft; make re; cd ..
